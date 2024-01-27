@@ -59,12 +59,43 @@ a {
   margin-top: 1rem;
 }
 
+.destinations {
+  padding: 2rem 3rem 4rem 3rem;
+}
+.destinations__title {
+  color: #335576;
+}
+.destinations__locations {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.destinations__card {
+  position: relative;
+}
+.destinations__img {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  width: 16rem;
+  height: 24rem;
+}
+.destinations__name {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 20rem;
+  left: 9rem;
+}
+
 .footbar {
   background-color: #fefaf5;
   display: flex;
   align-items: start;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
 }
 .footbar__email {
   margin-top: 2rem;
