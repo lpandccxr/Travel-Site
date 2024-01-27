@@ -16,18 +16,15 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
-
-  &__logo {
-    color: #335576;
-  }
-
-  &__item {
-    color: black;
-    margin: 0 0.5rem;
-    padding: 0.5rem 0;
-
-    &--active {
-      border-bottom: 4px solid #db7a4e;
-    }
-  }
 }
+.navbar__logo {
+  color: #335576;
+}
+.navbar__item {
+  color: black;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0;
+}
+.navbar__item--active {
+  border-bottom: 4px solid #db7a4e;
+}/*# sourceMappingURL=main.css.map */
