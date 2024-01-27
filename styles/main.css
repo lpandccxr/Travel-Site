@@ -6,6 +6,10 @@ body {
   font-family: Verdana;
 }
 
+main {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -15,6 +19,9 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
+  position: sticky;
+  padding: 0 1rem;
+  z-index: 1;
 }
 .navbar__logo {
   color: #335576;
@@ -26,6 +33,30 @@ a {
 }
 .navbar__item--active {
   border-bottom: 4px solid #db7a4e;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fefaf5;
+  padding: 5rem;
+}
+.hero__left {
+  color: #335576;
+  width: 40rem;
+}
+.hero__img {
+  width: 25rem;
+}
+.hero__button {
+  display: inline-block;
+  color: white;
+  background-color: #db7a4e;
+  padding: 0.5rem 2.3rem;
+  border-radius: 30px;
+  margin-top: 1rem;
 }
 
 .footbar {

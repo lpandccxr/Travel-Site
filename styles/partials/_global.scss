@@ -6,15 +6,25 @@ body {
   font-family: Verdana;
 }
 
+main {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
+
+// navbar
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
+  position: sticky;
+  padding: 0 1rem;
+  z-index: 1;
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   &__logo {
     color: #335576;
@@ -30,7 +40,35 @@ a {
     }
   }
 }
+// navbar
 
+//hero
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fefaf5;
+  padding: 5rem;
+
+  &__left {
+    color: #335576;
+    width: 40rem;
+  }
+  &__img {
+    width: 25rem;
+  }
+  &__button {
+    display: inline-block;
+    color: white;
+    background-color: #db7a4e;
+    padding: 0.5rem 2.3rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+  }
+}
+
+//footbar
 .footbar {
   background-color: #fefaf5;
   display: flex;
@@ -69,3 +107,4 @@ a {
     height: 1.2rem;
   }
 }
+//footbar
