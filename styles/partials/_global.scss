@@ -3,7 +3,6 @@
 }
 
 body {
-  width: 1280px;
   font-family: Verdana;
 }
 
@@ -29,5 +28,44 @@ a {
     &--active {
       border-bottom: 4px solid #db7a4e;
     }
+  }
+}
+
+.footbar {
+  background-color: #fefaf5;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  padding: 2rem;
+
+  &__email {
+    margin-top: 2rem;
+  }
+
+  &__title {
+    color: #335576;
+  }
+  &__type {
+    font-size: 0.7rem;
+    color: #db7a4e;
+  }
+  &__content {
+    display: block;
+    color: #335576;
+    font-size: 0.9rem;
+  }
+  &__block {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  &__date {
+    margin-right: 2rem;
+  }
+  &__icon {
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+    height: 1.2rem;
   }
 }
