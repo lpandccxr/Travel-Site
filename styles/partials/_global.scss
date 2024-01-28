@@ -22,12 +22,15 @@ a {
   justify-content: space-between;
   background-color: #ffffff;
   position: sticky;
-  padding: 0 1rem;
+  padding: 1rem;
   z-index: 1;
   // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   &__logo {
+    display: block;
     color: #335576;
+    font-weight: bold;
+    font-size: 2rem;
   }
 
   &__item {
@@ -41,8 +44,6 @@ a {
   }
 }
 // navbar
-
-
 
 //footbar
 .footbar {

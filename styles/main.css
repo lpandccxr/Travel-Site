@@ -20,11 +20,14 @@ a {
   justify-content: space-between;
   background-color: #ffffff;
   position: sticky;
-  padding: 0 1rem;
+  padding: 1rem;
   z-index: 1;
 }
 .navbar__logo {
+  display: block;
   color: #335576;
+  font-weight: bold;
+  font-size: 2rem;
 }
 .navbar__item {
   color: black;
