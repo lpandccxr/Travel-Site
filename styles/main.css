@@ -35,6 +35,43 @@ a {
   border-bottom: 4px solid #db7a4e;
 }
 
+.footbar {
+  background-color: #fefaf5;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  padding: 2rem 2rem 0 2rem;
+}
+.footbar__email {
+  margin-top: 2rem;
+}
+.footbar__title {
+  color: #335576;
+}
+.footbar__type {
+  font-size: 0.7rem;
+  color: #db7a4e;
+}
+.footbar__content {
+  display: block;
+  color: #335576;
+  font-size: 0.9rem;
+}
+.footbar__block {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.footbar__date {
+  margin-right: 2rem;
+}
+.footbar__icon {
+  display: inline-block;
+  margin-top: 2.5rem;
+  margin-right: 1rem;
+  height: 1.2rem;
+}
+
 .hero {
   width: 100%;
   display: flex;
@@ -88,41 +125,4 @@ a {
   position: absolute;
   top: 20rem;
   left: 9rem;
-}
-
-.footbar {
-  background-color: #fefaf5;
-  display: flex;
-  align-items: start;
-  justify-content: space-around;
-  padding: 2rem 2rem 0 2rem;
-}
-.footbar__email {
-  margin-top: 2rem;
-}
-.footbar__title {
-  color: #335576;
-}
-.footbar__type {
-  font-size: 0.7rem;
-  color: #db7a4e;
-}
-.footbar__content {
-  display: block;
-  color: #335576;
-  font-size: 0.9rem;
-}
-.footbar__block {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-}
-.footbar__date {
-  margin-right: 2rem;
-}
-.footbar__icon {
-  display: inline-block;
-  margin-top: 2.5rem;
-  margin-right: 1rem;
-  height: 1.2rem;
 }/*# sourceMappingURL=main.css.map */
