@@ -1,4 +1,5 @@
 @use "./partials/global" as *;
+@use "./partials/mixins" as *;
 
 .location {
   padding: 1rem 3rem 8rem 3rem;
@@ -22,6 +23,11 @@
   &__schedule {
     display: flex;
     justify-content: center;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__card {
     background-color: white;
@@ -31,6 +37,12 @@
     text-align: center;
     padding: 0 0.5rem;
     margin-right: 2rem;
+
+    @include mobile {
+      margin: 1.5rem 0 1.5rem 0;
+      width: 20rem;
+      height: 24rem;
+    }
   }
   &__date {
     font-weight: bold;

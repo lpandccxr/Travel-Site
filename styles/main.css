@@ -30,6 +30,12 @@ ul {
   z-index: 1;
   height: 4rem;
 }
+@media screen and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    height: 6.5rem;
+  }
+}
 .navbar__logo {
   display: block;
   color: #335576;
@@ -88,6 +94,11 @@ ul {
   justify-content: space-around;
   padding: 2rem 2rem 0 2rem;
 }
+@media screen and (max-width: 500px) {
+  .footbar {
+    flex-direction: column;
+  }
+}
 .footbar__email {
   margin-top: 2rem;
 }
@@ -130,9 +141,26 @@ ul {
   background-color: #fefaf5;
   padding: 5rem;
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+  }
+}
 .hero__left {
   color: #335576;
   width: 40rem;
+}
+@media screen and (max-width: 500px) {
+  .hero__left {
+    width: 100vw;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
 }
 .hero__img {
   width: 25rem;
@@ -156,6 +184,11 @@ ul {
 .destinations {
   padding: 2rem 3rem 4rem 3rem;
 }
+@media screen and (max-width: 1024px) {
+  .destinations {
+    padding: 2rem 0 4rem 0;
+  }
+}
 .destinations__title {
   color: #335576;
 }
@@ -163,7 +196,11 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .destinations__locations {
+    flex-direction: column;
+  }
 }
 .destinations__card {
   position: relative;
@@ -174,6 +211,25 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .destinations__card {
+    width: 12rem;
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .destinations__card {
+    width: 14rem;
+    height: 22rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .destinations__card {
+    margin: 1.5rem 0;
+    width: 22rem;
+    height: 30rem;
+  }
 }
 .destinations__card:hover {
   transform: scale(1.1);
@@ -192,6 +248,6 @@ ul {
   font-weight: bold;
   font-size: 1.5rem;
   position: absolute;
-  top: 20rem;
-  left: 9rem;
+  right: 1rem;
+  bottom: 0;
 }/*# sourceMappingURL=main.css.map */

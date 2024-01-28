@@ -1,3 +1,5 @@
+@use "./mixins" as *;
+
 * {
   box-sizing: border-box;
 }
@@ -31,7 +33,11 @@ ul {
   padding: 0.5rem 1rem;
   z-index: 1;
   height: 4rem;
-  // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  @include mobile {
+    flex-direction: column;
+    height: 6.5rem;
+  }
 
   &__logo {
     display: block;
@@ -97,6 +103,10 @@ ul {
   align-items: start;
   justify-content: space-around;
   padding: 2rem 2rem 0 2rem;
+
+  @include mobile {
+    flex-direction: column;
+  }
 
   &__email {
     margin-top: 2rem;

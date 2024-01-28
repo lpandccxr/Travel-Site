@@ -1,4 +1,5 @@
 @use "./partials/global" as *;
+@use "./partials/mixins" as *;
 
 //hero
 .hero {
@@ -9,9 +10,23 @@
   background-color: #fefaf5;
   padding: 5rem;
 
+  @include tablet {
+    padding: 2rem;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
   &__left {
     color: #335576;
     width: 40rem;
+
+    @include mobile {
+      width: 100vw;
+      padding: 0 1rem;
+      margin-bottom: 2rem;
+    }
   }
   &__img {
     width: 25rem;
@@ -38,6 +53,11 @@
 //destinations
 .destinations {
   padding: 2rem 3rem 4rem 3rem;
+
+  @include desktop {
+    padding: 2rem 0 4rem 0;
+  }
+
   &__title {
     color: #335576;
   }
@@ -45,7 +65,10 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 1rem;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__card {
     position: relative;
@@ -56,6 +79,21 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+
+    @include tablet {
+      width: 12rem;
+      height: 20rem;
+    }
+    @include desktop {
+      width: 14rem;
+      height: 22rem;
+    }
+
+    @include mobile {
+      margin: 1.5rem 0;
+      width: 22rem;
+      height: 30rem;
+    }
 
     &:hover {
       transform: scale(1.1);
@@ -75,7 +113,7 @@
     font-weight: bold;
     font-size: 1.5rem;
     position: absolute;
-    top: 20rem;
-    left: 9rem;
+    right: 1rem;
+    bottom: 0;
   }
 }
