@@ -74,9 +74,19 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 0 12rem;
+
+    @include desktop {
+      padding: 0 5rem;
+    }
+
+    @include tablet {
+      padding: 0 0.8rem;
+    }
 
     @include mobile {
       flex-direction: column;
+      padding: 0;
     }
   }
   &__card {

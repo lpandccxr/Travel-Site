@@ -207,10 +207,22 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 0 12rem;
+}
+@media screen and (max-width: 1024px) {
+  .destinations__locations {
+    padding: 0 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .destinations__locations {
+    padding: 0 0.8rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .destinations__locations {
     flex-direction: column;
+    padding: 0;
   }
 }
 .destinations__card {
