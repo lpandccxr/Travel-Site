@@ -201,6 +201,7 @@ ul {
 }
 .destinations__title {
   color: #335576;
+  margin-left: 1rem;
 }
 .destinations__locations {
   display: flex;
