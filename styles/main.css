@@ -141,9 +141,9 @@ ul {
   background-color: #fefaf5;
   padding: 5rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .hero {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -154,6 +154,16 @@ ul {
 .hero__left {
   color: #335576;
   width: 40rem;
+}
+@media screen and (max-width: 1024px) {
+  .hero__left {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__left {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 500px) {
   .hero__left {

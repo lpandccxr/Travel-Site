@@ -10,8 +10,8 @@
   background-color: #fefaf5;
   padding: 5rem;
 
-  @include tablet {
-    padding: 2rem;
+  @include desktop {
+    padding: 2rem 1.5rem;
   }
 
   @include mobile {
@@ -21,6 +21,14 @@
   &__left {
     color: #335576;
     width: 40rem;
+
+    @include desktop {
+      width: 45%;
+    }
+
+    @include tablet {
+      width: 40%;
+    }
 
     @include mobile {
       width: 100vw;
