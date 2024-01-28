@@ -96,6 +96,65 @@ ul {
 }
 // navbar
 
+//hero
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fefaf5;
+  padding: 5rem;
+
+  @include desktop {
+    padding: 2rem 1.5rem;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &__left {
+    color: #335576;
+    width: 40rem;
+
+    @include desktop {
+      width: 45%;
+    }
+
+    @include tablet {
+      width: 40%;
+    }
+
+    @include mobile {
+      width: 100vw;
+      padding: 0 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__img {
+    width: 25rem;
+  }
+  &__button {
+    display: inline-block;
+    color: white;
+    background-color: #db7a4e;
+    padding: 0.5rem 2.3rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    transition: all 0.3s;
+    width: 10.5rem;
+    border: none;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      scale: 0.9;
+    }
+  }
+}
+//hero
+
 //footbar
 .footbar {
   background-color: #fefaf5;

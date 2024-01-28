@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn More</title>
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/learn-more.css">
 </head>
 
 <body>
@@ -21,7 +21,27 @@
     </header>
 
     <main>
-        <div class="form">
+        <div class="hero">
+            <form action="/submit" method="POST">
+                <h1>Contact our trip specialist</h1>
+                <div class="flex-box">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="flex-box">
+                    <label for="phone">Phone#: </label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+                <div class="flex-box">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="flex-box">
+                    <!-- checkbox -->
+                </div>
+                <button type="submit" class="hero__button">Submit</button>
+
+            </form>
             <img src="../assets/Images/hero.png" alt="hero" class="hero__img">
         </div>
 
