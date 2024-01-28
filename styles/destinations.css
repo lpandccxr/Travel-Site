@@ -28,6 +28,19 @@ a {
   color: #335576;
   font-weight: bold;
   font-size: 2rem;
+  z-index: 2;
+  animation: color 3s linear infinite;
+}
+@keyframes color {
+  0% {
+    color: #335576;
+  }
+  50% {
+    color: #5bacc3;
+  }
+  100% {
+    color: #335576;
+  }
 }
 .navbar__item {
   color: black;
@@ -36,6 +49,11 @@ a {
 }
 .navbar__item--active {
   border-bottom: 4px solid #db7a4e;
+}
+.navbar__item:hover {
+  color: #db7a4e;
+  transition: 0.1s;
+  text-shadow: 0px 2px 2px black;
 }
 
 .footbar {
@@ -73,6 +91,12 @@ a {
   margin-top: 2.5rem;
   margin-right: 1rem;
   height: 1.2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .location {
