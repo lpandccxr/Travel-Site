@@ -70,4 +70,46 @@ a {
   margin-top: 2.5rem;
   margin-right: 1rem;
   height: 1.2rem;
+}
+
+.location {
+  padding: 1rem 3rem 8rem 3rem;
+  background-position: center;
+  background-size: cover;
+}
+.location--hawaii {
+  background-image: url(../assets/Images/hawaii.jpg);
+}
+.location--greece {
+  background-image: url(../assets/Images/greece.jpg);
+}
+.location--iceland {
+  background-image: url(../assets/Images/iceland.jpg);
+}
+.location__title {
+  color: white;
+  font-size: 4rem;
+  margin-left: 2rem;
+}
+.location__schedule {
+  display: flex;
+  justify-content: center;
+}
+.location__card {
+  background-color: white;
+  width: 16rem;
+  height: 22rem;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0 0.5rem;
+  margin-right: 2rem;
+}
+.location__date {
+  border-bottom: 3px solid black;
+}
+.location__todo {
+  background-color: #fefaf5;
+  border-radius: 5px;
+  padding: 0.8rem 0;
+  margin: 1rem 0;
 }/*# sourceMappingURL=destinations.css.map */
