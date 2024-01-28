@@ -128,6 +128,7 @@ ul {
 }
 .hero__img {
   width: 25rem;
+  margin: 2rem 0;
 }
 .hero__button {
   display: inline-block;
@@ -135,7 +136,7 @@ ul {
   background-color: #db7a4e;
   padding: 0.5rem 2.3rem;
   border-radius: 30px;
-  margin-top: 1rem;
+  margin: 1rem 0;
   transition: all 0.3s;
   width: 10.5rem;
   border: none;
